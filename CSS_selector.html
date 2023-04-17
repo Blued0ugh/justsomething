@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+h1{color: rgb(255, 215, 106);} /*선택자 태그기준*/
+*{ background-color: rgb(11, 46, 75);color: blanchedalmond;} /*전체배경, *광법ㅁ위->후순위*/
+#special{color: darkcyan;} /*id기준으로 탐색 후 설정*/
+.g1{background-color: #5e861d;}
+
+h1,p{font-size: 40px; font-style: italic;} /*동시에 여러개 태그*/
+/*바로 아래:자식, 그 이상:후손 =>이름 겹칠때 김철수 박철수 김철수데려와*/
+
+
+a:link {color: cornflowerblue;}
+a:visited{color: rgb(201, 104, 104);}
+a:hover{color: darkseagreen;background-color: rgb(72, 110, 141);}
+
+</style>
+
+</head>
+<body>
+    <h1>웹프로그래밍</h1>
+    <p class="g1">HTML 학습하기</p>
+    <p id="special">CSS 학습하기</p>
+    <p class="g1">Javascript 학습하기</p>
+    <a href="https://www.w3.org/">참고 사이트 w3c</a>
+    <p class="g1">전체 * 아이디 # 클래스 . 가상(의사): 자식 > </p>
+</body>
+</html>
